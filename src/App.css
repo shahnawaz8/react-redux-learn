@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.eye{
+  background: #000;
+  height: 40px;
+  width: 50px;
+  display: inline-block;
+  margin: 12%;
+  border-radius: 110px;
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  
+}
+.eye>div{
+  height: 20px;
+  background: white;
+  width: 20px;
+  border-radius: 100px;
+  margin:25px 0px 0px 0px;
+  animation: eyeRotate 7s infinite ease;
+}
+.mouth{
+  width: 65px;
+  height: 20px;
+  background: brown;
+  margin:12% 20% 0px 40%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-top: 10px;
+}
+.mouth>div{
+  animation: mouth 8s infinite ease-in-out;
+  height: 140%;
+  width: 30px;
+  padding: 1px;
+  background: red;
+  margin-left:27%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+}
+@keyframes eyeRotate {
+  0% {margin:25px 0px 0px 0px;}
+  /* 20% {margin:17px 0px 0px 7px;}
+  30% {margin:19px 0px 0px 9px;} */
+  
+  50% {margin:22px 0px 0px 30px;}
+  /* 70% {margin:15px 0px 0px 29px;}
+  
+  90% {margin:12px 0px 0px 29px;} */
+}
+@keyframes mouth {
+  50%{height: 2px;}
+}
+.main-div{
+  border: 1px solid whitesmoke;
+  margin: auto;
+  width: 400px;
+  background: rgb(224, 140, 140);
+  color: grey;
+  height: 400px;margin-top: 10%;
+  box-sizing: border-box;
+  border-radius: 50px;
+  
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 1px 1px 100px 1px lightgrey;
+  
+}
+.main-div>input{
+  font-size: 50px;
+  width: 50px;
+  margin-top: 20%;
+  text-align: center;
+  outline: none;
+  border: none;
+  background: whitesmoke;
+  border-radius: 10px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  box-shadow: 1px 1px 10px 1px black;
+  animation: one 10s infinite ease;
+  
+}
+.main-div>button{
+  width: 100px;
+  height: 80px;
+  margin: 20px;
+  margin-top: 10%;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  background-color: #139cf7;
+}
+.main-div>button:hover{
+  background-color: #1784cc;
+}
+
+@keyframes one{
+  0%   {color: violet;}
+  14%  {color: indigo;}
+  28%  {color: skyblue;}
+  42%  {color: green;}
+  56%  {color: yellow;}
+  70%  {color: orange;}
+  84%  {color: red;}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
